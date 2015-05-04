@@ -10,6 +10,8 @@ namespace DataLayer
 {
     class TutoringDbContext : DbContext
     {
-        public DbSet<Tutor> Tutors { get; set; }
+        public DbSet<Tutor> tutors { get; set; }
+        public DbSet<HelpedStudent> helpedStudent { get; set; }
+        public DbSet<TutoringSession> tutoringSession { get; set; }
     }
 }

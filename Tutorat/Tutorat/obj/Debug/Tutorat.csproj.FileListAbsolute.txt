@@ -11,3 +11,6 @@ c:\users\raphael\documents\visual studio 2013\Projects\Tutorat\Tutorat\bin\Debug
 c:\users\raphael\documents\visual studio 2013\Projects\Tutorat\Tutorat\obj\Debug\Tutorat.csprojResolveAssemblyReference.cache
 c:\users\raphael\documents\visual studio 2013\Projects\Tutorat\Tutorat\obj\Debug\Tutorat.exe
 c:\users\raphael\documents\visual studio 2013\Projects\Tutorat\Tutorat\obj\Debug\Tutorat.pdb
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\Tutorat\bin\Debug\Tutorat.exe.config
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\Tutorat\obj\Debug\Tutorat.exe
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\Tutorat\obj\Debug\Tutorat.pdb

@@ -8,5 +8,9 @@ namespace DataLayer.Model
 {
     class HelpedStudent : Entity
     {
+        string EmailAdress { get; set; }
+        string FirstName { get; set; }
+        string LastName { get; set; }
+        public ICollection<TutoringSession> session { get; set; }        
     }
 }

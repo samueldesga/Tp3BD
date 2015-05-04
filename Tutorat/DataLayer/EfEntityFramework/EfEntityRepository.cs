@@ -29,7 +29,8 @@ namespace DataLayer.EfEntityFramework
 
         public void delete(T entity)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Remove(entity);
+            _context.SaveChanges();
         }
 
         public void add(T entity)
@@ -40,7 +41,11 @@ namespace DataLayer.EfEntityFramework
 
         public void update(T entity)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Attach(entity);
+            _context.Entry<T>(entity).State = EntityState.Modified;
+            _context.SaveChanges();
         }
     }
 }
+
+
