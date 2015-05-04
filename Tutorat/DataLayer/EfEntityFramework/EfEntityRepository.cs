@@ -32,7 +32,12 @@ namespace DataLayer.EfEntityFramework
             _context.Set<T>().Remove(entity);
             _context.SaveChanges();
         }
+        public void deleteAll()
+        {
+            _context.Set<T>().RemoveRange(_context.Set<T>());
+            _context.SaveChanges();
 
+        }
         public void add(T entity)
         {
             _context.Set<T>().Add(entity);
