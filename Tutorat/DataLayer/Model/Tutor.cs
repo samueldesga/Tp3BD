@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Model
 {
-    class Tutor : Entity
+    public class Tutor : Entity
     {
-        string prenom{get; set;}
-        string lastName { get; set; }
-        string adresseCourriel { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string EmailAdress { get; set; }
         public ICollection<TutoringSession> session { get; set; }
 
    

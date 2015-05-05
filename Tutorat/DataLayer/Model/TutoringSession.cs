@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Model
 {
-    class TutoringSession : Entity
+    public class TutoringSession : Entity
     {
-        DateTime DateTimeSession { get; set; }
-        HelpedStudent Helped { get; set; }
-        int HelpedId { get; set; }
-        int LenghtSession { get; set; }
-        Tutor Tutor { get; set; }
-        int TutorId { get; set; }
+        public DateTime DateTimeSession { get; set; }
+        public HelpedStudent Helped { get; set; }
+        public int HelpedId { get; set; }
+        public int LenghtSession { get; set; }
+        public Tutor Tutor { get; set; }
+        public int TutorId { get; set; }
     }
 }
