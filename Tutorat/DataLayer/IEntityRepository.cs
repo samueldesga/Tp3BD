@@ -11,7 +11,6 @@ namespace DataLayer
     {
         IQueryable<T> GetAll();
         T GetById(int id);
-        T SingleId(int id);
         void delete(T entity);
         void deleteAll();
 

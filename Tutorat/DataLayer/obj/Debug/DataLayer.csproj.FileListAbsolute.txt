@@ -1,1 +1,14 @@
 c:\Users\raphael\documents\visual studio 2013\Projects\Tutorat\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\raphael\Desktop\Tp3BD\Tutorat\DataLayer\obj\Debug\DataLayer.pdb

@@ -50,6 +50,7 @@ namespace DataLayer.EfEntityFramework
             _context.Entry<T>(entity).State = EntityState.Modified;
             _context.SaveChanges();
         }
+     
     }
 }
 
