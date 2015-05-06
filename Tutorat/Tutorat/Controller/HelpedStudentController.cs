@@ -10,10 +10,10 @@ using Tutorat.ViewModel;
 
 namespace Tutorat.Controller
 {
-  public  class HelpedStudentController
+    public class HelpedStudentController
     {
         IEntityRepository<HelpedStudent> helpedStudentRepository;
-      public  HelpedStudentController(IEntityRepository<HelpedStudent> _helpedStudentRepository)
+        public HelpedStudentController(IEntityRepository<HelpedStudent> _helpedStudentRepository)
         {
             helpedStudentRepository = _helpedStudentRepository;
         }
@@ -37,5 +37,32 @@ namespace Tutorat.Controller
             new HelpedListView(helpedVMList).Display();
 
         }
+        //Query 3
+        public void ListWhenWithoutTutoringSession()
+        {
+            var student = helpedStudentRepository.GetAll().ToList<HelpedStudent>();
+
+            var studentVMList = new List<HelpedListVM>();
+
+            foreach (HelpedStudent hs in student)
+            {
+                if (hs.session.Count == 0)
+                {
+
+                    studentVMList.Add(new HelpedListVM()
+
+                    {
+                        FirstName = hs.FirstName,
+                        LastName = hs.LastName,
+                        Id = hs.Id,
+                        EmailAdress = hs.EmailAdress
+                    }
+                        );
+                }
+            }
+            new HelpedListView(studentVMList).Display();
+        }
     }
 }
+
+

@@ -21,6 +21,7 @@ namespace Tutorat.View
         {
             foreach (WorkingHoursTutorListVM t in tutorList)
             {
+
                 Console.WriteLine(t.ToString());
             }
         }

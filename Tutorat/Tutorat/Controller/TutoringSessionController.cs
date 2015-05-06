@@ -18,7 +18,7 @@ namespace Tutorat.Controller
 
             tutoringRepository = _TutoringRepository;
         }
-    public void listAll()
+    public void ListAll()
         {
             var tutoringSession = tutoringRepository.GetAll().ToList();
 

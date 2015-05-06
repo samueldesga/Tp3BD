@@ -9,16 +9,19 @@ namespace Tutorat.View
 {
     class HelpedListView
     {
-         IEnumerable<HelpedListVM> helpedList;
+        IEnumerable<HelpedListVM> helpedList;
 
-    public    HelpedListView(IEnumerable<HelpedListVM> _helpedList)
+        public HelpedListView(IEnumerable<HelpedListVM> _helpedList)
         {
             helpedList = _helpedList;
         }
 
         public void Display()
         {
-            Console.WriteLine(helpedList.ToString());
+            foreach (HelpedListVM h in helpedList)
+            {
+                Console.WriteLine(h.ToString());
+            }
         }
     }
 }

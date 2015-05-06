@@ -197,10 +197,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 1,
                 DateTimeSession = new DateTime(2015, 3, 16, 13, 0, 0),
                 LenghtSession = 2,
-                Helped = helpedStudent5,
-                HelpedId = 5,
-                Tutor = tutor5,
-                TutorId = 5
+                HelpedId = helpedStudent5.Id,
+                TutorId = tutor5.Id
             };
             tutoringSession.add(tutoringSession1);
 
@@ -209,10 +207,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 2,
                 DateTimeSession = new DateTime(2015, 3, 24, 10, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent5,
-                HelpedId = 5,
-                Tutor = tutor1,
-                TutorId = 1
+                HelpedId = helpedStudent5.Id,
+                TutorId = tutor1.Id
             };
             tutoringSession.add(tutoringSession2);
 
@@ -221,10 +217,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 3,
                 DateTimeSession = new DateTime(2015, 3, 25, 13, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent2,
-                HelpedId = 2,
-                Tutor = tutor4,
-                TutorId = 4
+                HelpedId = helpedStudent2.Id,
+                TutorId = tutor4.Id
             };
             tutoringSession.add(tutoringSession3);
 
@@ -233,10 +227,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 4,
                 DateTimeSession = new DateTime(2015, 4, 1, 12, 0, 0),
                 LenghtSession = 2,
-                Helped = helpedStudent1,
-                HelpedId = 1,
-                Tutor = tutor5,
-                TutorId = 5
+                HelpedId = helpedStudent1.Id,
+                TutorId = tutor5.Id
             };
             tutoringSession.add(tutoringSession4);
 
@@ -245,10 +237,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 5,
                 DateTimeSession = new DateTime(2015, 4, 1, 13, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent2,
-                HelpedId = 2,
-                Tutor = tutor3,
-                TutorId = 3
+                HelpedId = helpedStudent2.Id,
+                TutorId = tutor3.Id
             };
             tutoringSession.add(tutoringSession5);
 
@@ -257,10 +247,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 6,
                 DateTimeSession = new DateTime(2015, 4, 6, 16, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent1,
-                HelpedId = 1,
-                Tutor = tutor4,
-                TutorId = 4
+                HelpedId = helpedStudent1.Id,
+                TutorId = tutor4.Id
             };
             tutoringSession.add(tutoringSession6);
 
@@ -269,10 +257,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 7,
                 DateTimeSession = new DateTime(2015, 4, 8, 10, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent6,
-                HelpedId = 6,
-                Tutor = tutor4,
-                TutorId = 4
+                HelpedId = helpedStudent6.Id,
+                TutorId = tutor4.Id
             };
             tutoringSession.add(tutoringSession7);
 
@@ -281,10 +267,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 8,
                 DateTimeSession = new DateTime(2015, 4, 10, 10, 0, 0),
                 LenghtSession = 2,
-                Helped = helpedStudent1,
-                HelpedId = 1,
-                Tutor = tutor4,
-                TutorId = 4
+                HelpedId = helpedStudent1.Id,
+                TutorId = tutor4.Id
             };
             tutoringSession.add(tutoringSession8);
 
@@ -293,10 +277,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 9,
                 DateTimeSession = new DateTime(2015, 4, 29, 12, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent9,
-                HelpedId = 9,
-                Tutor = tutor5,
-                TutorId = 5
+                HelpedId = helpedStudent9.Id,
+                TutorId = tutor5.Id
             };
             tutoringSession.add(tutoringSession9);
 
@@ -305,10 +287,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 10,
                 DateTimeSession = new DateTime(2015, 5, 25, 13, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent10,
-                HelpedId = 10,
-                Tutor = tutor7,
-                TutorId = 7
+                HelpedId = helpedStudent10.Id,
+                TutorId = tutor7.Id
             };
             tutoringSession.add(tutoringSession10);
 
@@ -317,10 +297,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 11,
                 DateTimeSession = new DateTime(2015, 5, 27, 12, 0, 0),
                 LenghtSession = 2,
-                Helped = helpedStudent10,
-                HelpedId = 10,
-                Tutor = tutor5,
-                TutorId = 5
+                HelpedId = helpedStudent10.Id,
+                TutorId = tutor5.Id
             };
             tutoringSession.add(tutoringSession11);
 
@@ -329,10 +307,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 12,
                 DateTimeSession = new DateTime(2015, 5, 27, 13, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent2,
-                HelpedId = 2,
-                Tutor = tutor3,
-                TutorId = 3
+                HelpedId = helpedStudent2.Id,
+                TutorId = tutor3.Id
             };
             tutoringSession.add(tutoringSession12);
 
@@ -341,10 +317,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 13,
                 DateTimeSession = new DateTime(2015, 6, 1, 9, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent7,
-                HelpedId = 7,
-                Tutor = tutor7,
-                TutorId = 7
+                HelpedId = helpedStudent7.Id,
+                TutorId = tutor7.Id
             };
             tutoringSession.add(tutoringSession13);
 
@@ -353,10 +327,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 14,
                 DateTimeSession = new DateTime(2015, 6, 2, 9, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent11,
-                HelpedId = 11,
-                Tutor = tutor7,
-                TutorId = 7
+                HelpedId = helpedStudent11.Id,
+                TutorId = tutor7.Id
             };
             tutoringSession.add(tutoringSession14);
 
@@ -365,10 +337,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 15,
                 DateTimeSession = new DateTime(2015, 6, 2, 11, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent2,
-                HelpedId = 2,
-                Tutor = tutor7,
-                TutorId = 7
+                HelpedId = helpedStudent2.Id,
+                TutorId = tutor7.Id
             };
             tutoringSession.add(tutoringSession15);
 
@@ -377,10 +347,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 16,
                 DateTimeSession = new DateTime(2015, 6, 2, 13, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent5,
-                HelpedId = 5,
-                Tutor = tutor1,
-                TutorId = 1
+                HelpedId = helpedStudent5.Id,
+                TutorId = tutor1.Id
             };
             tutoringSession.add(tutoringSession16);
 
@@ -389,10 +357,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 17,
                 DateTimeSession = new DateTime(2015, 6, 2, 15, 0, 0),
                 LenghtSession = 1,
-                Helped = helpedStudent9,
-                HelpedId = 9,
-                Tutor = tutor4,
-                TutorId = 4
+                HelpedId = helpedStudent9.Id,
+                TutorId = tutor4.Id
             };
             tutoringSession.add(tutoringSession17);
 
@@ -401,10 +367,8 @@ namespace DataLayer.EfEntityFramework
                 Id = 18,
                 DateTimeSession = new DateTime(2015, 6, 3, 13, 0, 0),
                 LenghtSession = 2,
-                Helped = helpedStudent7,
-                HelpedId = 7,
-                Tutor = tutor3,
-                TutorId = 3
+                HelpedId = helpedStudent7.Id,
+                TutorId = tutor3.Id
             };
             tutoringSession.add(tutoringSession18);
 

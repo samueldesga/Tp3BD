@@ -92,5 +92,38 @@ namespace Tutorat.Controller
             new TutorListView(tutorVMList).Display();
         }
 
+        //Query 4
+        public void ListWhenWithoutTutoringSession(DateTime _sessionDate)
+        {
+            var tutors = tutorRepository.GetAll().ToList();
+
+            var tutorVMList = new List<TutorListVM>();
+            bool sessionOnDate = false;
+            foreach (Tutor t in tutors)
+            {
+                sessionOnDate = false;
+                foreach (TutoringSession s in t.session)
+                {
+                    if (s.DateTimeSession.Date == _sessionDate.Date)
+                    {
+                        sessionOnDate = true;
+                    }
+
+                }
+                if (!sessionOnDate)
+                {
+                    tutorVMList.Add(new TutorListVM()
+                    {
+                        EmailAdress = t.EmailAdress,
+                        FirstName = t.FirstName,
+                        LastName = t.LastName,
+                        Id = t.Id
+                    });
+                }
+
+            }
+            new TutorListView(tutorVMList).Display();
+        }
+
     }
 }

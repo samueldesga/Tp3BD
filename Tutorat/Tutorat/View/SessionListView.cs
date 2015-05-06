@@ -11,14 +11,17 @@ namespace Tutorat.View
     {
         IEnumerable<TutoringSessionListVM> sessionList;
 
-  public      SessionListView(IEnumerable<TutoringSessionListVM> _sessionList)
+        public SessionListView(IEnumerable<TutoringSessionListVM> _sessionList)
         {
             sessionList = _sessionList;
         }
 
         public void Display()
         {
-            Console.WriteLine(sessionList.ToString());
+            foreach (TutoringSessionListVM t in sessionList)
+            {
+                Console.WriteLine(t.ToString());
+            }
         }
     }
 }
