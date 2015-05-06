@@ -14,11 +14,16 @@ namespace Tutorat
         {
 
             EfDataBaseHelper database = new EfDataBaseHelper();
+            
             database.seed();//peuplement des tables
 
             TutorController tutorController = new TutorController(new EfEntityRepository<Tutor>());
             HelpedStudentController helpedStudentController = new HelpedStudentController(new EfEntityRepository<HelpedStudent>());
             TutoringSessionController tutoringSessionController = new TutoringSessionController(new EfEntityRepository<TutoringSession>());
+            //tutorController.ListAll();
+            tutorController.ListWhenNextTutoringSession();
+
+            Console.ReadKey();
        }
     }
 }
