@@ -21,8 +21,8 @@ namespace Tutorat.ViewModel
         public override string ToString()
         {
             string tutoringSessionInformation = "Date: " + DateTimeSession + ", Helped: " + helpFirstName + 
-                " " + helpLastName + "   Tutor:" + tutorFirstName + " " + tutorLastName + "   lenght:" + 
-                lenghtSession;
+                ", " + helpLastName + "   Tutor:" + tutorFirstName + ", " + tutorLastName + "   lenght:" + 
+                lenghtSession + "h";
             return tutoringSessionInformation;
         }
     }

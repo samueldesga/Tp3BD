@@ -69,7 +69,7 @@ namespace Tutorat.Controller
         {
             var tutors = tutorRepository.GetAll().ToList();
 
-            var tutorVMList = new List<TutorListVM>();
+            var tutorVMList = new List<ListAllWitnNextTutoringSessionVM>();
 
             foreach (Tutor t in tutors)
             {
@@ -77,19 +77,22 @@ namespace Tutorat.Controller
                 {
                     if (s.DateTimeSession > DateTime.Now)
                     {
-                        tutorVMList.Add(new TutorListVM()
+                        tutorVMList.Add(new ListAllWitnNextTutoringSessionVM()
                         {
-                            EmailAdress = t.EmailAdress,
-                            FirstName = t.FirstName,
-                            LastName = t.LastName,
-                            Id = t.Id
+                            DateTimeSession = s.DateTimeSession,
+                            LenghtSession = s.LenghtSession,
+                            HelpedFirstName = s.Helped.FirstName,
+                            HelpedLastName = s.Helped.LastName,
+                            TutorFirstName = t.FirstName,
+                            TutorLastName = t.LastName
                         });
                     }
 
                 }
 
             }
-            new TutorListView(tutorVMList).Display();
+            tutorVMList.OrderBy(Tutor => Tutor.TutorFirstName).ThenBy(TutoringSession => TutoringSession.DateTimeSession);
+            new ListAllWithNextTutoringSessionView(tutorVMList).Display();
         }
 
         //Query 4

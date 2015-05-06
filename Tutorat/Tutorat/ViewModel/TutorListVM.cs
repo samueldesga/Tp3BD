@@ -16,7 +16,7 @@ namespace Tutorat.ViewModel
 
         public override string ToString()
         {
-            string tutorInformation = LastName + ", " + FirstName + "    " + EmailAdress;
+            string tutorInformation = LastName + ", " + FirstName + "    Email: " + EmailAdress;
             return tutorInformation;
         }
     }

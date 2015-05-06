@@ -16,8 +16,8 @@ namespace Tutorat.ViewModel
         public int totalHeures { get; set; }
         public override string ToString()
         {
-            string tutorInformation = LastName + ", " + FirstName + "    " + EmailAdress + "    " + 
-                totalHeures;
+            string tutorInformation = LastName + ", " + FirstName + "    Email: " + EmailAdress + 
+                "    Heures: " + totalHeures;
             return tutorInformation;
         }
     }
