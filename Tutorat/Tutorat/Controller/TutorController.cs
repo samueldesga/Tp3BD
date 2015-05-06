@@ -10,61 +10,32 @@ using Tutorat.ViewModel;
 using Tutorat.View;
 namespace Tutorat.Controller
 {
-    public class TutorController
+ public  class TutorController 
     {
-        IEntityRepository<Tutor> tutorRepository;
-        public TutorController(IEntityRepository<Tutor> _tutorRepository)
-        {
-            tutorRepository = _tutorRepository;
-        }
+       IEntityRepository<Tutor> tutorRepository;
+     public  TutorController(IEntityRepository<Tutor> _tutorRepository)
+       {
+           tutorRepository = _tutorRepository;
+       }
 
-        public void ListAll()
-        {
-            var tutors = tutorRepository.GetAll().ToList();
+       public void ListAll()
+       {
+           var tutors = tutorRepository.GetAll().ToList();
 
-            var tutorVMList = new List<TutorListVM>();
+           var tutorVMList = new List<TutorListVM>();
 
-            foreach (Tutor t in tutors)
-            {
-                tutorVMList.Add(new TutorListVM()
-                {
-                    EmailAdress = t.EmailAdress,
-                    FirstName = t.FirstName,
-                    LastName = t.LastName,
-                    Id = t.Id
-
-                    
-                });
-                var TutorControllerView = new TutorListView(tutorVMList);
-                TutorControllerView.Display();
-            }
-        }
-        public void listAllWithWorkingHoursTotal()
-        {
-            var tutors = tutorRepository.GetAll().ToList();
-            var tutorVMListWorking = new List<WorkingHoursTutorListVM>();
-            int totalheures = 0;
-            foreach (Tutor t in tutors)
-            {
-                foreach (TutoringSession s in t.session)
-                {
-                    totalheures = totalheures + s.LenghtSession;
-                    tutorVMListWorking.Add(new WorkingHoursTutorListVM()
-                    {
-                        
-                        EmailAdress = t.EmailAdress,
-                        FirstName = t.FirstName,
-                        LastName = t.LastName,
-                        Id = t.Id,
-                    totalHeures = totalheures
-                    });
-                    var TutorControllerViewHour = new WorkingHoursTutorListView(tutorVMListWorking);
-                    TutorControllerViewHour.Display();
-                }
-            }
-
-        }
-
+           foreach(Tutor t in tutors)
+           {
+               tutorVMList.Add(new TutorListVM()
+               {
+                   EmailAdress = t.EmailAdress,
+                   FirstName = t.FirstName,
+                   LastName = t.LastName,
+                   Id = t.Id
+               });
+           }
+           new TutorListView(tutorVMList).Display();           
+       }
 
     }
 }

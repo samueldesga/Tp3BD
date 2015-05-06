@@ -8,16 +8,5 @@ namespace Tutorat.ViewModel
 {
     class WorkingHoursTutorListVM
     {
-
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string EmailAdress { get; set; }
-        public int Id { get; set; }
-        public int totalHeures { get; set; }
-        public override string ToString()
-        {
-            string tutorInformation = LastName + ", " + FirstName + "    " + EmailAdress;
-            return tutorInformation;
-        }
     }
 }
