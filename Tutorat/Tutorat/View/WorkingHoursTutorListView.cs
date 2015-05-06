@@ -16,10 +16,13 @@ namespace Tutorat.View
             tutorList = _tutorList;
         }
 
-       
+
         public void Display()
         {
-            Console.WriteLine(tutorList.ToString());
+            foreach (WorkingHoursTutorListVM t in tutorList)
+            {
+                Console.WriteLine(t.ToString());
+            }
         }
     }
 }

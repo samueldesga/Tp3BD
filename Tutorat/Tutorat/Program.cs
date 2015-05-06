@@ -21,8 +21,8 @@ namespace Tutorat
             HelpedStudentController helpedStudentController = new HelpedStudentController(new EfEntityRepository<HelpedStudent>());
             TutoringSessionController tutoringSessionController = new TutoringSessionController(new EfEntityRepository<TutoringSession>());
             //tutorController.ListAll();
-            tutorController.ListWhenNextTutoringSession();
-
+            //tutorController.ListWhenNextTutoringSession();
+            tutorController.listAllWithWorkingHoursTotal();
             Console.ReadKey();
        }
     }
