@@ -17,16 +17,16 @@ namespace DataLayer.EfEntityFramework
         public EfDataBaseHelper()
         {
             tutors = new EfEntityRepository<Tutor>();
-
             helpedStudent = new EfEntityRepository<HelpedStudent>();
-
             tutoringSession = new EfEntityRepository<TutoringSession>();
 
 
         }
         public void seed()
         {
-
+            tutors.deleteAll();
+            helpedStudent.deleteAll();
+            tutoringSession.deleteAll();
             //Création tuteur
             Tutor tutor1 = new Tutor()
             {
