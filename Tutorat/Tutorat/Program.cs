@@ -19,6 +19,10 @@ namespace Tutorat
             TutorController tutorController = new TutorController(new EfEntityRepository<Tutor>());
             HelpedStudentController helpedStudentController = new HelpedStudentController(new EfEntityRepository<HelpedStudent>());
             TutoringSessionController tutoringSessionController = new TutoringSessionController(new EfEntityRepository<TutoringSession>());
+
+            tutorController.listAllWithWorkingHoursTotal();
+            Console.ReadKey();
+       
        }
     }
 }
