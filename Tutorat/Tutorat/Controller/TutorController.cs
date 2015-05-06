@@ -34,9 +34,7 @@ namespace Tutorat.Controller
                    Id = t.Id
                });
            }
-
-           var tutorView = new TutorListView(tutorVMList);
-           tutorView.Display();
+           new TutorListView(tutorVMList).Display();           
        }
 
     }

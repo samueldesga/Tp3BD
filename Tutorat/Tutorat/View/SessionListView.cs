@@ -11,7 +11,7 @@ namespace Tutorat.View
     {
         IEnumerable<TutoringSessionListVM> sessionList;
 
-        SessionListView(IEnumerable<TutoringSessionListVM> _sessionList)
+  public      SessionListView(IEnumerable<TutoringSessionListVM> _sessionList)
         {
             sessionList = _sessionList;
         }

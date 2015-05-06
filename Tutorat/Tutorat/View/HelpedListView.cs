@@ -11,7 +11,7 @@ namespace Tutorat.View
     {
          IEnumerable<HelpedListVM> helpedList;
 
-        HelpedListView(IEnumerable<HelpedListVM> _helpedList)
+    public    HelpedListView(IEnumerable<HelpedListVM> _helpedList)
         {
             helpedList = _helpedList;
         }

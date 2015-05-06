@@ -9,13 +9,14 @@ namespace Tutorat.View
 {
     class TutorListView
     {
-        IEnumerable<TutorListVM> tutorList;
+       private IEnumerable<TutorListVM> tutorList;
 
-        TutorListView(IEnumerable<TutorListVM> _tutorList)
+    public    TutorListView(IEnumerable<TutorListVM> _tutorList)
         {
             tutorList = _tutorList;
         }
 
+       
         public void Display()
         {
             Console.WriteLine(tutorList.ToString());

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tutorat.View;
 using Tutorat.ViewModel;
 
 namespace Tutorat.Controller
@@ -33,8 +34,7 @@ namespace Tutorat.Controller
                     Id = t.Id
                 });
             }
-            var helpedView = new HelpedListView(tutorVMList);
-            helpedView.Display();
+            new HelpedListView(helpedVMList).Display();
 
         }
     }
