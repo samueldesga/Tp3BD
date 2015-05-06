@@ -10,10 +10,10 @@ using Tutorat.ViewModel;
 
 namespace Tutorat.Controller
 {
-    class HelpedStudentController
+  public  class HelpedStudentController
     {
         IEntityRepository<HelpedStudent> helpedStudentRepository;
-        HelpedStudentController(IEntityRepository<HelpedStudent> _helpedStudentRepository)
+      public  HelpedStudentController(IEntityRepository<HelpedStudent> _helpedStudentRepository)
         {
             helpedStudentRepository = _helpedStudentRepository;
         }

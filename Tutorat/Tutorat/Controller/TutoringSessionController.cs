@@ -10,10 +10,10 @@ using Tutorat.ViewModel;
 
 namespace Tutorat.Controller
 {
-    class TutoringSessionController
+    public class TutoringSessionController
     {
         IEntityRepository<TutoringSession> tutoringRepository;
-        TutoringSessionController(IEntityRepository<TutoringSession> _TutoringRepository)
+        public TutoringSessionController(IEntityRepository<TutoringSession> _TutoringRepository)
         {
 
             tutoringRepository = _TutoringRepository;

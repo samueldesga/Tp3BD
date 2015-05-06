@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.EfEntityFramework
 {
-    class EfDataBaseHelper
+  public  class EfDataBaseHelper
     {
 
         private EfEntityRepository<Tutor> tutors;
@@ -407,14 +407,7 @@ namespace DataLayer.EfEntityFramework
             tutoringSession.add(tutoringSession18);
 
 
-            //Requête B2 retrouver les données des tables
-
-            1
-            //var tutorsList = tutors.GetAll();
-
-            //var helpedStudentList = helpedStudent.GetAll();
-
-            //var tutoringSessionList = tutoringSession.GetAll();
+           
         }
 
         

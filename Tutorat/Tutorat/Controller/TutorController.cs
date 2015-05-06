@@ -10,10 +10,10 @@ using Tutorat.ViewModel;
 using Tutorat.View;
 namespace Tutorat.Controller
 {
-   public class TutorController 
+ public  class TutorController 
     {
        IEntityRepository<Tutor> tutorRepository;
-       TutorController(IEntityRepository<Tutor> _tutorRepository)
+     public  TutorController(IEntityRepository<Tutor> _tutorRepository)
        {
            tutorRepository = _tutorRepository;
        }
