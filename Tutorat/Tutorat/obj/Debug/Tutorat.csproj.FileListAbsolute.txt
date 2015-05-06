@@ -26,4 +26,3 @@ C:\Users\raphael\Desktop\Tp3BD\Tutorat\Tutorat\bin\Debug\DataLayer.pdb
 C:\Users\raphael\Desktop\Tp3BD\Tutorat\Tutorat\bin\Debug\EntityFramework.xml
 C:\Users\raphael\Desktop\Tp3BD\Tutorat\Tutorat\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\raphael\Desktop\Tp3BD\Tutorat\Tutorat\bin\Debug\EntityFramework.SqlServerCompact.xml
-C:\devApp\Tp3BD\Tutorat\Tutorat\bin\Debug\Tutorat.exe.config

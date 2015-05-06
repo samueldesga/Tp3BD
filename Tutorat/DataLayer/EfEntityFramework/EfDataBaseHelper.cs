@@ -18,7 +18,9 @@ namespace DataLayer.EfEntityFramework
         {
             tutors = new EfEntityRepository<Tutor>();
 
+            helpedStudent = new EfEntityRepository<HelpedStudent>();
 
+            tutoringSession = new EfEntityRepository<TutoringSession>();
 
 
         }
